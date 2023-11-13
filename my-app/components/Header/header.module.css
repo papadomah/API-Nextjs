@@ -1,0 +1,25 @@
+.header_container{
+  max-width: 1440px;
+  
+}
+.header{
+  box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+  
+  
+}
+.header .inner{
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch_mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

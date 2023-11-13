@@ -1,0 +1,42 @@
+
+.flag_container{
+  width: 264px;
+  height: 160px;
+  
+  
+}
+.card{
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  width: 264px;
+  height: 336px;
+  
+}
+.country_info{
+  margin-left: 24px;
+  flex: 0.5;
+  
+}
+.flag{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.countryName{
+  max-width: 250px;
+}
+.country_info .values{
+  color: gray;
+  
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* gap: 70px; */
+  /* cursor: pointer; */
+}

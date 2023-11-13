@@ -1,0 +1,77 @@
+
+.countryDetails{
+  /* border: 3px solid red; */
+  width: 1280px;
+  margin: 80px auto;
+}
+.back{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  width: 136px;
+  height: 40px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  margin-bottom: 80px;
+
+}
+.back p{
+  font-size: 16px;
+}
+.back_icon{
+  font-size: 32px;
+
+  
+ 
+}
+.detail_body{
+  margin: 15px auto 0;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.img_container img {
+  /* border: 2px solid; */
+  width: 560px;
+  height: 401px;
+  object-fit: cover;
+  
+}
+.detailFlag{
+  max-width: 100%;
+}
+.right_info{
+  /* border:  3px solid blue; */
+  width: 249px;
+  height: 50%;
+  padding-top: 50px;
+  
+  
+}
+.left_info{
+  /* border: 3px solid yellow; */
+  width: 300px;
+  height: 80%;
+
+  
+}
+.detail_info{
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid purple; */
+  width: 598px;
+  height: 100%;
+  flex-wrap: wrap;
+    
+  
+
+}
+.values{
+  color: gray;
+}
