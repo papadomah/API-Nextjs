@@ -13,12 +13,15 @@ interface CountryCardProps {
   };
 }
 
-const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
+const CountryCard: React.FC<CountryCardProps> = ({ country }) => 
+
+{
   useContext(CountryContext);
+
 
   return (
     <div className={styles.container}>
-      <Link className={styles.link} href={country.name}>
+      <Link className={styles.link} href={country.name} >
         <div className={styles.card}>
           <div className={styles.flag_container}>
             <img className={styles.flag} src={country.flag} alt="flag" />

@@ -5,9 +5,11 @@ import Link from "next/link";
 import CountryDetails from "../CountryDetails/CountryDetails";
 
 
+
 const BorderCountries: React.FC<{ borders: string[] }> = ({ borders }) => {
   const { countries } = useContext(CountryContext);
   const [ setSelectedCountry] = useState<string | null>(null);
+
 
 
 if (!borders) {
@@ -18,10 +20,6 @@ if (!borders) {
     borders.includes(country.alpha3Code)
   );
 
-  const handleCountryClick = (name: string) => {
-    setSelectedCountry(name);
-  };
-
   return (
     <div className={styles.border_country}>
       <p className={styles.border_description}>Border Countries:</p>
@@ -30,11 +28,12 @@ if (!borders) {
           (country: { alpha3Code: string; name: string }) => (
             <div
               key={country.alpha3Code}
-              onClick={() => handleCountryClick(`/country/${CountryDetails}`)}
+              onClick={() => (`/country/${CountryDetails}`)}
             >
               <Link
-                className={styles.border_link} key={country.alpha3Code}
-                href={`/country/${country.alpha3Code}`}              >
+                className={styles.border_link} href={country.name} >
+                  {/* key={country.alpha3Code}
+                href={`/country/${country.alpha3Code}`}  */}
                 <span className={styles.individualBorderCountries}>
                   {country.name}
                 </span>

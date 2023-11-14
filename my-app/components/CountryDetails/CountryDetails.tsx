@@ -6,6 +6,7 @@ import styles from "../CountryDetails/countryDetails.module.css";
 import { MdKeyboardBackspace } from 'react-icons/md';
 import country from "@/pages/[CountryDetails]";
 import { BorderStyle } from "@mui/icons-material";
+import CountryCard from "../CountryCard/CountryCard";
 
 interface CountryData {
   map(arg0: (borders: any) => React.JSX.Element): React.ReactNode;
@@ -40,7 +41,7 @@ const CountryDetails: React.FC = () => {
       setIndividualCountry(foundCountry || null);
     }
   }, [countries, CountryDetails]);
-
+ 
 
   
   return (

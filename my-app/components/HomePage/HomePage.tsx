@@ -33,7 +33,9 @@ const HomePage: React.FC = () => {
           <input type="text" placeholder="Search for a country ...." onChange={handleSearchInputChange} />
         </div>
         <select className={styles.filter} onChange={handleRegionSelectChange}>
-          <option value="">All</option>
+          
+          <option value="">Filter by region</option>
+          
           <option value="Africa">Africa</option>
           <option value="Americas">Americas</option>
           <option value="Asia">Asia</option>

@@ -25,7 +25,7 @@ color: black;
 }
 .border_description{
   
-  width: 35%;
+  max-width: 30%;
 }
 .individualBorderCountries{
   display: inline-block;
