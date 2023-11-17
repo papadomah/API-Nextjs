@@ -50,16 +50,16 @@ const CountryDetails: React.FC = () => {
         theme?.theme === "dark" ? styles.darkMode : ""
       }`}
     >
-      <section className={styles.countryDetails}>
+      <section className={`${styles.countryDetails} ${theme?.theme==='dark'? styles.darkMode: ''}`}>
         <button
           className={`${styles.back} ${
             theme?.theme === "dark" ? styles.darkMode : ""
-          }`} onClick={() => router.back()}        >
+          }`} onClick={() => router.push('/')}        >
           <MdKeyboardBackspace size={40} />
           <p>Go Back</p>
         </button>
         {individualCountry !== null && (
-          <section className={styles.detail_body}>
+          <section className={`${styles.detail_body} ${theme?.theme==='dark'? styles.darkMode: ''}`}>
             <div className={styles.img_container}>
               <img
                 className={styles.flag}

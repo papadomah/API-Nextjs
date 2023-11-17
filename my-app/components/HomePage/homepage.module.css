@@ -24,7 +24,7 @@
   border: none;
   align-items: center;
   display: flex;
-  gap: 25px;
+  gap: 10px;
   padding-left: 30px;
   
     
@@ -76,9 +76,10 @@
   @media (width<= 400px) {
     .searchFilter{
       flex-direction: column;
-      align-items: flex-start;
       gap: 40px;  
-      margin-top: 28px;    
+      margin-top: 28px; 
+      
+      
     }
   
     .search{
