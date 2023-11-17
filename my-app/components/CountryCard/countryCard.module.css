@@ -5,18 +5,35 @@
   
   
 }
+
 .card{
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: white;
   width: 264px;
   height: 336px;
+  /* border: 2px solid red; */
   
 }
 .country_info{
   margin-left: 24px;
   flex: 0.5;
+  font-size: 57px;
   
+  
+}
+.country_info h3{
+  font-size: 18px;
+  font-weight: 800;
+  color: #111517;
+}
+.country_info p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.country_info .values{
+  font-size: 14px;
+  font-weight: 600;
 }
 .flag{
   width: 100%;
@@ -33,10 +50,18 @@
 
 .link{
   color: black;
-  text-decoration: none;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
-  /* gap: 70px; */
-  /* cursor: pointer; */
+  text-decoration: none; 
+}
+
+.darkMode{
+  background-color: #2B3844;;
+color: white;
+
+}
+.darkMode h3{
+  color: white;
+}
+
+@media (width<= 400px){
+  
 }

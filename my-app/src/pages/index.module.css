@@ -1,0 +1,10 @@
+.darkMode{
+  background-color: #202C36;
+  color: var(--light-mode-bg);
+}
+
+@media (width<= 400px){
+ .darkMode{
+  width: 375px;
+ }
+}

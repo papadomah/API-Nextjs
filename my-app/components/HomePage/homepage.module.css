@@ -1,10 +1,18 @@
+.homePage{
+  width: 1280px;
+  margin: 0 auto;
+  
+  /* border: 2px solid; */
+}
+
 .searchFilter{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   background-color: white;
-  width: 1280px;
+  /* width: 1280px; */
   margin: 80px auto;
+  /* border: 3px solid yellow; */
   }
   .search {
   width: 480px;
@@ -37,17 +45,53 @@
   outline: none;
   font-size: 15px;
   border: none;
+  
   }
   .search{
     display: flex;
     align-items: center;
-      
+    
+    
   }
   
   .country_list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 73px;
+  }
+  .darkMode  {
+    background-color: var(--dark-mode-bg);
+    color: white;
+    
+  }
+  .darkMode .search{
+    background-color: #2B3844;
+  }
+  .darkMode .filter{
+    background-color: #2B3844;
+  }
+
+
+  @media (width<= 400px) {
+    .searchFilter{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;  
+      margin-top: 28px;    
+    }
+  
+    .search{
+      width: 320px;
+    }
+    .homePage{
+      width: 375px;
+      padding: 15px;
+      
+    }
+    .country_list{
+      gap: 40px;
+      
+    }
   }
   
