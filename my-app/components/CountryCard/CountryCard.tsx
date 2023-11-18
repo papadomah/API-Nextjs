@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CountryContext } from "../../context/CountryContext";
 import { ThemeContext } from "../../context/ThemeContext";
 interface CountryCardProps {
-  country: {
+  country: any;
     name: string;
     population: number;
     region: string;
@@ -12,7 +12,7 @@ interface CountryCardProps {
     flag: string;
     
   };
-}
+
 
 const CountryCard: React.FC<CountryCardProps> = ({ country }) => 
 

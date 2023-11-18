@@ -6,6 +6,20 @@ import { HiOutlineSearch } from "react-icons/hi";
 import country from "@/pages/[CountryDetails]";
 import { ThemeContext } from "../../context/ThemeContext";
 
+
+interface CountryCardProps {
+  country: {
+    name: string;
+    population: number;
+    region: string;
+    capital: string;
+    flag: string;
+    
+  };
+}
+
+
+
 const HomePage: React.FC = () => {
   const { countries } = useContext(CountryContext);
   const [searchValue, setSearchValue] = useState("");
@@ -21,7 +35,7 @@ const HomePage: React.FC = () => {
     setSelectValue(e.target.value);
   };
 
-  const filteredCountries = countries.filter((country) => {
+  const filteredCountries = countries.filter((country:any) => {
     const nameMatch = country.name
       .toLowerCase()
       .includes(searchValue.toLowerCase());
@@ -80,7 +94,7 @@ const HomePage: React.FC = () => {
             capital?: string;
             flag?: string;
           }) => (
-            <CountryCard key={country.name} country={country} />
+            <CountryCard key={country.name} country={country} name={""} population={0} region={""} capital={""} flag={""} />
           )
         )}
       </div>
