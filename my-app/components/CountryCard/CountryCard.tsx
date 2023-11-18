@@ -10,6 +10,7 @@ interface CountryCardProps {
     region: string;
     capital: string;
     flag: string;
+    
   };
 }
 
